@@ -49,6 +49,14 @@ namespace MamimumNumber
             Assert.AreEqual(20.3, actualMax);
         }
 
+        [Test]
+        public void MaxStringValue_FirstValue()
+        {
+            MaximumNumber md = new MaximumNumber();
+            string actualMax = md.MaximumStringArray("peach", "apple", "banana");
+            Assert.AreEqual("peach", actualMax);
+        }
+
 
     }
 }
