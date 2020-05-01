@@ -34,6 +34,21 @@ namespace MamimumNumber
             Assert.AreEqual(20.5, actualMax);
         }
 
+        [Test]
+        public void MaxDoubleValue_secondValue()
+        {
+            MaximumNumber md = new MaximumNumber();
+            double actualMax = md.MaximumDoubleArray(10.5, 15.2, 14.3);
+            Assert.AreEqual(15.2, actualMax);
+        }
+        [Test]
+        public void MaxDoubleValue_ThirdValue()
+        {
+            MaximumNumber md = new MaximumNumber();
+            double actualMax = md.MaximumDoubleArray(10.5, 15.2, 20.3);
+            Assert.AreEqual(20.3, actualMax);
+        }
+
 
     }
 }
