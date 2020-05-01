@@ -25,5 +25,15 @@ namespace MamimumNumber
             int actualMax = md.maximumIntegerNumber(10, 15, 20);
             Assert.AreEqual(20, actualMax);
         }
+
+        [Test]
+        public void MaxDoubleValue_FirstValue()
+        {
+            MaximumNumber md = new MaximumNumber();
+            double actualMax = md.MaximumDoubleArray(20.5, 15.2, 14.3);
+            Assert.AreEqual(20.5, actualMax);
+        }
+
+
     }
 }
