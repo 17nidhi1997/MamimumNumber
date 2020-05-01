@@ -1,5 +1,6 @@
 ﻿using System;
 using System.Collections.Generic;
+using System.Linq;
 using System.Text;
 
 namespace MamimumNumber
@@ -28,6 +29,15 @@ namespace MamimumNumber
             {
                 return 0;
             }
+        }
+
+        //Find the Maximum double Number
+        public double MaximumDoubleArray(double firstValue, double secondValue, double thirdValue)
+        {    //Array decalre
+            double[] doubleNumber = { firstValue, secondValue, thirdValue };
+            //Finding The Maximum double In Array
+            double MaxValue = doubleNumber.Max();
+            return MaxValue;
         }
     }
 }
