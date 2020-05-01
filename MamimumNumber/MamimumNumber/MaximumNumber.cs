@@ -39,5 +39,15 @@ namespace MamimumNumber
             double MaxValue = doubleNumber.Max();
             return MaxValue;
         }
+
+        //Find the Maximum string Number
+        public String MaximumStringArray(string firstValue, string secondValue, string thirdValue)
+        {
+            //Array decalre
+            string[] array = { firstValue, secondValue, thirdValue };
+            //Finding The Maximum String In Array
+            string MaximumValue = array.Max();
+            return MaximumValue;
+        }
     }
 }
