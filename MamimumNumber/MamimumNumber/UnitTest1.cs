@@ -18,5 +18,12 @@ namespace MamimumNumber
             int actualMax = md.maximumIntegerNumber(10, 15, 14);
             Assert.AreEqual(15, actualMax);
         }
+        [Test]
+        public void MaxIntegerValue_ThirdValue()
+        {
+            MaximumNumber md = new MaximumNumber();
+            int actualMax = md.maximumIntegerNumber(10, 15, 20);
+            Assert.AreEqual(20, actualMax);
+        }
     }
 }
